@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>ellipsix</name>
+      <description lang="en">Ellipsix Gentoo Overlay, contains selected ebuilds that I find useful</description>
+        <homepage>https://github.com/ellipsix/gentoo-overlay</homepage>
+        <owner type="person">
+            <name>David Zaslavsky</name>
+            <email>diazona@ellipsix.net</email>
+        </owner>
+        <source type="git">https://github.com/ellipsix/gentoo-overlay.git</source>
+        <source type="git">git+ssh://git@github.com/ellipsix/gentoo-overlay.git</source>
+        <feed>https://github.com/ellipsix/gentoo-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
