@@ -22,9 +22,9 @@ RDEPEND="${PYTHON_DEPS}
 	sys-libs/readline:0
 	dev-vcs/git
 	$(python_gen_cond_dep '
-		dev-python/fuse-python[${PYTHON_MULTI_USEDEP}]
-		dev-python/pyxattr[${PYTHON_MULTI_USEDEP}]
-		web? ( www-servers/tornado[${PYTHON_MULTI_USEDEP}] )
+		dev-python/fuse-python[${PYTHON_USEDEP}]
+		dev-python/pyxattr[${PYTHON_USEDEP}]
+		web? ( www-servers/tornado[${PYTHON_USEDEP}] )
 	')"
 DEPEND="${RDEPEND}
 	test? (
