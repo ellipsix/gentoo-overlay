@@ -1,8 +1,8 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
-PYTHON_COMPAT=( python3_{6,7,8} )
+EAPI=8
+PYTHON_COMPAT=( python3_{9,10,11} )
 
 inherit python-single-r1
 
@@ -38,8 +38,6 @@ DEPEND="${RDEPEND}
 # the tests should pass anyway, therefore we do not use RESTRICT=test
 RESTRICT="mirror"
 
-PATCHES=( "${FILESDIR}"/bup-py3-sitedir-r1.patch )
-
 src_configure() {
 	# only build/install docs if enabled
 	export PANDOC=$(usex doc pandoc "")
@@ -48,7 +46,6 @@ src_configure() {
 }
 
 src_prepare() {
-	eapply "${PATCHES[@]}"
 	eapply_user
 
 	# remove a module only needed for Python 2 compatibility

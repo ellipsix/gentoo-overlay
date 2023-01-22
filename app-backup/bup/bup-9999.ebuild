@@ -1,12 +1,12 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="A highly efficient backup system based on the git packfile format"
 HOMEPAGE="https://bup.github.io/ https://github.com/bup/bup"
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{9,10,11} )
 inherit python-single-r1
 EGIT_REPO_URI="https://github.com/bup/bup.git"
 inherit git-r3

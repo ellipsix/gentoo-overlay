@@ -1,8 +1,8 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+EAPI=8
+PYTHON_COMPAT=( python3_{9,10,11} )
 
 inherit python-single-r1
 
